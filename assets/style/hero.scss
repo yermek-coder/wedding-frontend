@@ -1,0 +1,22 @@
+.landing-hero {
+    &-poster {
+        background-image: linear-gradient(
+                to bottom,
+                transparent 70%,
+                var(--bs-body-bg)
+            ),
+            url("/paper.webp");
+        background-size: cover;
+    }
+    &-card {
+        &-top {
+            rotate: 12deg;
+        }
+        &-bottom {
+            rotate: -14deg;
+        }
+    }
+    &-title {
+        font-size: 3em;
+    }
+}

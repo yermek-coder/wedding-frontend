@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap");
+
+@font-face {
+    font-family: "Lastochka";
+    src: url("~/assets/fonts/Lastochka.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.ff-handwrite {
+    font-family: "Lastochka", cursive;
+}
