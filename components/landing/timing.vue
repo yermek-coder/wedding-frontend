@@ -37,7 +37,7 @@
 </template>
 
 <script setup>
-    const weddindDate = new Date("07.07.2024");
+    const weddindDate = new Date("07.13.2024");
     const timing = [
         { time: "16:30", title: "Церемония", icon: "ceremony" },
         {

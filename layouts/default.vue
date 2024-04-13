@@ -1,3 +1,4 @@
 <template>
+    <flashes />
     <slot />
 </template>

@@ -1,6 +1,8 @@
 <template>
     <div class="container container-fluid py-5 text-center">
-        <h1 class="text-uppercase mb-3">мы ждем вас</h1>
+        <h1 class="text-uppercase mb-3">
+            мы ждем вас, {{ name + " " + surname }}
+        </h1>
         <h2 class="mb-3">
             {{
                 weddindDate.toLocaleString("ru", {
@@ -24,7 +26,6 @@
                 </template>
             </div>
         </div>
-        <h3>Дорогие родные и близкие!</h3>
         <p>
             <br />Мы будем рады разделить<br />с вами радость неповторимого<br />для
             нас дня – дня нашей свадьбы!<br /><br />Приглашаем присоединиться к
@@ -36,10 +37,13 @@
 <script setup>
     import { ref } from "vue";
 
-    const weddindDate = new Date("07.07.2024");
+    const route = useRoute();
+    const weddindDate = new Date("07.13.2024");
     const timerTitles = ["Дней", "Часов", "Минут", "Секунд"];
     const timerValues = ref([]);
     const timer = ref();
+
+    const { name, surname } = route.query;
 
     onMounted(() => {
         timer.value = setInterval(function () {
