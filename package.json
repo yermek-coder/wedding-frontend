@@ -18,5 +18,8 @@
         "bootstrap": "^5.3.3",
         "sass": "^1.56.2",
         "vite-plugin-sass-glob-import": "^3.0.2"
+    },
+    "optionalDependencies": {
+        "@rollup/rollup-linux-x64-gnu": "4.6.1"
     }
 }
