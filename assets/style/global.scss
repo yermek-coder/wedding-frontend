@@ -39,7 +39,11 @@ $form-label-font-weight: 600;
 $marked: #ffec10;
 
 @import "./node_modules/bootstrap/scss/bootstrap";
-@import "./assets/style/*.scss";
+@import "./btn.scss";
+@import "./flashes.scss";
+@import "./fonts.scss";
+@import "./hero.scss";
+@import "./icons.scss";
 
 :root {
     --bs-gray-950: #{$gray-950};

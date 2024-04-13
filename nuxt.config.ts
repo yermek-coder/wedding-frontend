@@ -1,5 +1,3 @@
-import sassGlobImport from "vite-plugin-sass-glob-import";
-
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
@@ -12,9 +10,6 @@ export default defineNuxtConfig({
       ]
     }
   },
-  css: ['~/style.scss'],
-  vite: {
-    plugins: [sassGlobImport()]
-  }
+  css: ['~/assets/style/global.scss'],
 })
 
