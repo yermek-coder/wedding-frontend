@@ -10,6 +10,24 @@ export default defineNuxtConfig({
       ]
     }
   },
+  components: {
+    global: true,
+    dirs: ['~/components']
+  },
   css: ['~/assets/style/global.scss'],
+  vite: {
+    server: {
+      proxy: {
+          "/api": {
+              target: "http://localhost:4000",
+              // target: "https://wedding-backend-wq95.onrender.com",
+              changeOrigin: true,
+              secure: false,
+              ws: true,
+              rewrite: path => path.replace(/^\/api/, "")
+          }
+      }
+  },
+  }
 })
 
