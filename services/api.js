@@ -3,9 +3,9 @@
 // API Service
 class API {
     url(path = "") {
-        console.log("process.env.URL", process.env.URL);
+        const host = process.env.URL;
         return `${
-            process.env.NODE_ENV === "development" ? "" : process.env.URL
+            process.env.NODE_ENV === "development" ? "" : host
         }/api/${path}`;
     }
 
