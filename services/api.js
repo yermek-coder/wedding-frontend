@@ -3,9 +3,10 @@
 // API Service
 class API {
     url(path = "") {
-        const host = process.env.URL;
         return `${
-            process.env.NODE_ENV === "development" ? "" : host
+            process.env.NODE_ENV === "development"
+                ? ""
+                : "https://vitaliy-sofya-2024.ru"
         }/api/${path}`;
     }
 
