@@ -9,6 +9,24 @@
                     Ответьте на пару вопросов, чтобы облегчить нам выбор
                 </h4>
                 <div class="mb-3">
+                    <label class="form-label">Имя</label>
+                    <input
+                        v-model="model.name"
+                        type="text"
+                        class="form-control"
+                        required
+                    />
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Фамилия</label>
+                    <input
+                        v-model="model.surname"
+                        type="text"
+                        class="form-control"
+                        required
+                    />
+                </div>
+                <div class="mb-3">
                     <div class="mb-3">Подтвердите своё присутствие</div>
                     <div
                         class="form-check"
@@ -21,6 +39,7 @@
                                 class="form-check-input"
                                 type="radio"
                                 :value="presense"
+                                required
                             />
                             {{ $i18n(presense) }}
                         </label>
@@ -39,6 +58,7 @@
                                 class="form-check-input"
                                 type="radio"
                                 :value="presense"
+                                required
                             />
                             {{ $i18n(presense) }}
                         </label>
