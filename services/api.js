@@ -3,7 +3,7 @@
 // API Service
 class API {
     url(path = "") {
-        return `/api/${path}`;
+        return `${window.location.host}/api/${path}`;
     }
 
     get(path, config = null) {
