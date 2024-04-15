@@ -3,9 +3,7 @@
 // API Service
 class API {
     url(path = "") {
-        return `${
-            process.env.NODE_ENV === "development" ? "" : process.env.BASE_URL
-        }/api/${path}`;
+        return `/api/${path}`;
     }
 
     get(path, config = null) {
