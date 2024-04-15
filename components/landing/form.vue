@@ -41,7 +41,7 @@
                 props: { data: model },
             });
             if (result) {
-                await surveyService.addSurveyResult(model);
+                await surveyService.addSurveyResult(result);
                 $flash({ message: "Спасибо за уделенное время!" });
             }
         } catch (err) {
