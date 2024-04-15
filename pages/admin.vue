@@ -5,7 +5,9 @@
                 <button @click="showLinkModal" class="btn btn-primary">
                     Создать ссылку
                 </button>
-                <button @click="logout" class="btn btn-secondary">Выход</button>
+                <button @click="onLogout" class="btn btn-secondary">
+                    Выход
+                </button>
             </div>
         </header>
         <div class="container container-fluid text-center">
@@ -22,5 +24,10 @@
 
     function showLinkModal() {
         $modal({ component: "admin-link-dialog" });
+    }
+
+    async function onLogout() {
+        await logout();
+        navigateTo("/login");
     }
 </script>

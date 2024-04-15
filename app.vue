@@ -9,7 +9,15 @@
 
     const { logout } = useAuth();
 
+    async function onUnauthorized() {
+        await logout();
+        navigateTo("/login");
+    }
+
     onMounted(() => {
-        document.addEventListener("api/unauthorized", logout);
+        document.addEventListener("api/unauthorized", onUnauthorized);
+    });
+    onBeforeUnmount(() => {
+        document.removeEventListener("api/unauthorized", onUnauthorized);
     });
 </script>

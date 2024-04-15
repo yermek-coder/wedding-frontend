@@ -1,7 +1,7 @@
 <template>
     <div class="container container text-center">
         <form @submit.prevent="submit">
-            <h4 class="text-center mb-5 fw-semibold">Авторизация</h4>
+            <h4 class="text-center my-5 fw-semibold">Авторизация</h4>
 
             <div class="mb-3">
                 <input
@@ -35,6 +35,7 @@
     async function submit() {
         try {
             await login(model);
+            navigateTo("/admin");
         } catch (error) {
             $flash({ message: error.message, type: "warning" });
         }
