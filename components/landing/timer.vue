@@ -1,5 +1,5 @@
 <template>
-    <div class="container container-fluid py-5 text-center">
+    <div class="container container-fluid text-center">
         <h1 class="text-uppercase mb-3">
             мы ждем вас, {{ name + " " + surname }}
         </h1>

@@ -1,5 +1,5 @@
 <template>
-    <div class="container container py-5 text-center">
+    <div class="container container text-center">
         <form @submit.prevent="submit">
             <h4 class="text-center mb-5 fw-semibold">Авторизация</h4>
 

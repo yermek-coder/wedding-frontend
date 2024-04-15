@@ -1,11 +1,15 @@
 <template>
-    <div class="container container py-5">
+    <div class="container mb-5">
+        <h1 class="landing-title ff-handwrite lh-sm text-center mb-3">
+            Присутствие на торжестве
+        </h1>
+
         <div class="text-center">
             <p>
                 Мы очень старались сделать праздник незабываемым, поэтому будем
                 рады, если Вы подтвердите свое присутствие до 13 июля 2022 г.
             </p>
-            <p class="text-muted small">
+            <p class="text-muted small mb-5">
                 Обратите внимание, что если вы идёте парой или семьёй, то нужно
                 заполнить форму на каждого взрослого
             </p>

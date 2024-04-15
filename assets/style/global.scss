@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
 
 $gray-950: #08142a;
 $gray-900: #13213b;
@@ -18,10 +18,10 @@ $warning: #eaaf13;
 
 $min-contrast-ratio: 2.725;
 
-$font-family-sans-serif: "Inter", system-ui, -apple-system, "Segoe UI", Roboto,
-    "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif,
+$font-family-sans-serif: "Open Sans", system-ui, -apple-system, "Segoe UI",
+    Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
-$font-size-base: 1rem;
+$font-size-base: 1.1rem;
 
 $list-group-item-padding-y: 0.3rem;
 $dropdown-item-padding-y: $list-group-item-padding-y;
@@ -42,6 +42,8 @@ $marked: #ffec10;
 @import "./btn.scss";
 @import "./flashes.scss";
 @import "./fonts.scss";
+@import "./details.scss";
+@import "./outro.scss";
 @import "./hero.scss";
 @import "./icons.scss";
 

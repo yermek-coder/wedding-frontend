@@ -1,6 +1,6 @@
 <template>
     <div class="landing-hero">
-        <div class="container container-fluid landing-hero-poster py-5">
+        <div class="container container-fluid landing-hero-poster pt-5 mb-3">
             <div class="row pe-4 justify-content-end mb-n5">
                 <div
                     class="col-8 landing-hero-card landing-hero-card-top p-3 shadow bg-body"
@@ -23,7 +23,7 @@
         </div>
 
         <div class="container container-fluid text-center">
-            <h1 class="ff-handwrite landing-hero-title">Узнаете этих деток?</h1>
+            <h1 class="ff-handwrite landing-title mt-4">Узнаете этих деток?</h1>
             <p>
                 Разнообразный и богатый опыт дальнейшее развитие различных форм
                 деятельности в значительной степени обуславливает создание
