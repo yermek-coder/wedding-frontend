@@ -5,24 +5,14 @@
                 <div
                     class="col-8 landing-hero-card landing-hero-card-top p-3 shadow bg-body"
                 >
-                    <img
-                        src="/kid1.webp"
-                        alt="Kid's photo"
-                        loading="lazy"
-                        class="img-fluid"
-                    />
+                    <img src="/kid1.webp" alt="Kid's photo" class="img-fluid" />
                 </div>
             </div>
             <div class="row ps-3 justify-content-start">
                 <div
                     class="col-8 landing-hero-card landing-hero-card-bottom p-3 shadow bg-body position-relative"
                 >
-                    <img
-                        src="/kid2.webp"
-                        alt="Kid's photo"
-                        loading="lazy"
-                        class="img-fluid"
-                    />
+                    <img src="/kid2.webp" alt="Kid's photo" class="img-fluid" />
                     <img
                         src="/hand-drawn-heart.webp"
                         alt="Heart"
