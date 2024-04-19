@@ -8,8 +8,7 @@
         >
             <div class="btn-flex justify-content-between">
                 <div class="text-start">
-                    <div>{{ item.name }}</div>
-                    <div class="muted small">{{ item.surname }}</div>
+                    {{ item.greeting || item.guests }}
                 </div>
                 <div class="btn-flex">
                     <SurveyMarkersTransfer :item />

@@ -6,24 +6,18 @@
         <div class="modal-body">
             <form @submit.prevent>
                 <div class="mb-3">
-                    <label class="form-label">Имя</label>
+                    <label class="form-label"
+                        >Текст обращения к гостю(ям)</label
+                    >
                     <input
-                        v-model="model.name"
+                        v-model="model.greeting"
                         type="text"
                         :disabled="disabled"
                         class="form-control"
                         required
                     />
                 </div>
-                <div class="mb-3">
-                    <label class="form-label">Фамилия</label>
-                    <input
-                        v-model="model.surname"
-                        type="text"
-                        :disabled="disabled"
-                        class="form-control"
-                    />
-                </div>
+
                 <div class="mb-3">
                     <label class="form-label">Присутствие</label>
                     <select v-model="model.presense" class="form-select">
@@ -37,6 +31,16 @@
                         </option>
                     </select>
                 </div>
+
+                <div class="mb-3">
+                    <label class="form-label">В каком составе</label>
+                    <textarea
+                        v-model="model.guests"
+                        placeholder="Иван Иванов, Мария Иванова"
+                        class="form-control"
+                    />
+                </div>
+
                 <div class="mb-3">
                     <label class="form-label">Присутствие на втором дне</label>
                     <select
@@ -53,6 +57,16 @@
                         </option>
                     </select>
                 </div>
+
+                <div class="mb-3">
+                    <div class="form-label">Напитки</div>
+                    <common-multi-selector
+                        v-model="model.drinks"
+                        :options="drinks"
+                        :disabled="disabled"
+                    />
+                </div>
+
                 <div class="form-check form-switch mb-3">
                     <label class="form-check-label"> Нужен трансфер</label>
                     <input
@@ -61,6 +75,27 @@
                         :disabled="disabled"
                         type="checkbox"
                         role="switch"
+                    />
+                </div>
+
+                <div class="form-check form-switch mb-3">
+                    <label class="form-check-label"> Есть аллергия</label>
+                    <input
+                        v-model="model.allergy"
+                        class="form-check-input"
+                        :disabled="disabled"
+                        type="checkbox"
+                        role="switch"
+                    />
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Песня</label>
+                    <input
+                        v-model="model.song"
+                        type="text"
+                        :disabled="disabled"
+                        class="form-control"
                     />
                 </div>
             </form>
@@ -92,13 +127,13 @@
 
 <script setup>
     import { clone } from "~/util";
+    import { presenseTypes, drinks } from "~/services/form";
 
     const emit = defineEmits(["dismiss", "close"]);
     const props = defineProps(["data"]);
 
     const model = reactive(clone(props.data));
     const disabled = ref(true);
-    const presenseTypes = ["confirm", "idk", "denied"];
 
     function submit() {
         emit("close", { method: "edit", model });
@@ -110,3 +145,9 @@
         }
     }
 </script>
+
+<style scoped>
+    .modal-body {
+        max-height: 80vh;
+    }
+</style>

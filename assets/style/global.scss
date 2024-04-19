@@ -10,7 +10,7 @@ $gray-600: #3e4e6a;
 // $gray-550: #969fb1;
 $gray-500: #bdc0df;
 
-$primary: #3172d5;
+$primary: #d7168b;
 $secondary: #6c7393;
 $success: #5faf42;
 $danger: #cd5b5b;
@@ -42,9 +42,8 @@ $marked: #ffec10;
 @import "./btn.scss";
 @import "./flashes.scss";
 @import "./fonts.scss";
-@import "./details.scss";
-@import "./outro.scss";
-@import "./hero.scss";
+@import "./landing.scss";
+@import "./animation.scss";
 @import "./icons.scss";
 
 :root {
@@ -56,4 +55,12 @@ $marked: #ffec10;
 body,
 html {
     height: 100vh;
+}
+
+.h-33 {
+    height: 33.33%;
+}
+
+.h-66 {
+    height: 66.66%;
 }

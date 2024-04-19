@@ -1,0 +1,53 @@
+.landing-location-img-curve {
+    max-height: 3rem;
+    rotate: 10deg;
+}
+
+.landing-hero {
+    &-poster {
+        background-image: url("/paper.webp");
+        background-size: cover;
+        background-position: top;
+    }
+    &-card {
+        &-top {
+            rotate: 12deg;
+        }
+        &-bottom {
+            rotate: -14deg;
+        }
+        &-arrow {
+            rotate: 45deg;
+            height: 3.5rem;
+        }
+    }
+}
+
+.landing-outro {
+    background-image: url("/paper_bottom.webp");
+    background-size: cover;
+    background-position: bottom;
+}
+
+.landing-details {
+    &-colors {
+        height: 3rem;
+    }
+
+    &-list-item-image {
+        min-width: 6rem;
+    }
+}
+
+.landing-timing-timer .btn-flex {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-auto-flow: column;
+    .small {
+        font-size: 0.75em;
+    }
+}
+
+.landing-timing-steps-star {
+    height: 0.75rem;
+}

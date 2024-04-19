@@ -1,19 +1,23 @@
 <template>
-    <div class="container mb-5">
-        <h1 class="landing-title ff-handwrite lh-sm text-center mb-3">
+    <div class="container mb-5 pt-4">
+        <h1
+            v-motion="{ animation: 'fade-in-bottom' }"
+            class="landing-title ff-handwrite lh-sm text-center mb-3"
+        >
             Присутствие на торжестве
         </h1>
 
         <div class="text-center">
-            <p>
+            <p v-motion="{ animation: 'fade-in-bottom' }" class="mb-4">
                 Мы очень старались сделать праздник незабываемым, поэтому будем
                 рады, если Вы подтвердите свое присутствие до 13 июля 2022 г.
             </p>
-            <p class="text-muted small mb-5">
-                Обратите внимание, что если вы идёте парой или семьёй, то нужно
-                заполнить форму на каждого взрослого
-            </p>
-            <button @click="showDialog" class="btn btn-primary btn-lg">
+
+            <button
+                v-motion="{ animation: 'fade-in-right' }"
+                @click="showDialog"
+                class="btn btn-outline-primary btn-lg pulse"
+            >
                 Подтвердить
             </button>
         </div>
@@ -29,9 +33,12 @@
     const model = reactive({
         presense: "",
         second_day_presense: "",
+        greeting: route.query.greeting || "",
+        guests: "",
+        drinks: [],
         need_transfer: false,
-        name: route.query.name || "",
-        surname: route.query.surname || "",
+        allergy: false,
+        song: "",
     });
 
     async function showDialog() {

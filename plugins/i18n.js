@@ -2,9 +2,14 @@ import { filename } from "pathe/utils";
 
 export default defineNuxtPlugin(() => {
     const labels = {
-        confirm: "Подтверждаю",
-        idk: "Затрудняюсь ответить",
-        denied: "Не смогу прийти",
+        confirm: "Да, с удовольствием!",
+        denied: "К сожалению, не смогу",
+        vodka: "Водка",
+        cognac: "Коньяк",
+        whiskey: "Виски",
+        champagne: "Шампанское",
+        white_whine: "Белое вино",
+        red_whine: "Красное вино",
     };
 
     return {
