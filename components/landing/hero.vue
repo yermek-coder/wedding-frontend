@@ -5,14 +5,26 @@
                 <div
                     class="col-8 landing-hero-card landing-hero-card-top p-3 shadow bg-body"
                 >
-                    <img src="/kid1.webp" alt="Kid's photo" class="img-fluid" />
+                    <img
+                        src="/kid1.webp"
+                        height="400"
+                        width=" 376"
+                        alt="Kid's photo"
+                        class="img-fluid"
+                    />
                 </div>
             </div>
             <div class="row ps-3 justify-content-start">
                 <div
                     class="col-8 landing-hero-card landing-hero-card-bottom p-3 shadow bg-body position-relative"
                 >
-                    <img src="/kid2.webp" alt="Kid's photo" class="img-fluid" />
+                    <img
+                        src="/kid2.webp"
+                        height="367"
+                        width="400"
+                        alt="Kid's photo"
+                        class="img-fluid"
+                    />
                     <img
                         src="/hand-drawn-heart.webp"
                         alt="Heart"
