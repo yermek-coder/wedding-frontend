@@ -38,6 +38,7 @@
                         v-model="model.guests"
                         placeholder="Иван Иванов, Мария Иванова"
                         class="form-control"
+                        :disabled="disabled"
                     />
                 </div>
 
