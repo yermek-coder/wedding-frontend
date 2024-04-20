@@ -110,7 +110,7 @@
 </template>
 
 <script setup>
-    const weddindDate = new Date("07.13.2024");
+    const weddindDate = new Date("2024-07-13T12:00:00.000Z");
     const timing = [
         {
             time: "16:00",

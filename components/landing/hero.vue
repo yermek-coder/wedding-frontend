@@ -47,10 +47,9 @@
                 решили, что пора жениться.
             </p>
             <p>
-                С большой радостью приглашаем вас{{ greeting ? "," : "" }}
-                <span class="fw-bold">{{ greeting }}</span>
-                на семейный праздник — нашу свадьбу! Мы будем рады, если вы
-                проведете этот счастливый день с нами.
+                <b v-if="greeting">{{ greeting }}. </b>С большой радостью
+                приглашаем вас на семейный праздник — нашу свадьбу! Мы будем
+                рады, если вы проведете этот счастливый день с нами.
             </p>
         </div>
     </div>
@@ -58,5 +57,5 @@
 
 <script setup>
     const route = useRoute();
-    const greeting = (route.query.greeting && route.query.greeting + ",") || "";
+    const greeting = route.query.greeting || "";
 </script>
