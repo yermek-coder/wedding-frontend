@@ -5,7 +5,7 @@
         </div>
         <div class="modal-body overflow-auto">
             <form @submit.prevent="submit">
-                <h4 class="mb-3">
+                <h4 class="mb-4">
                     Ответьте на пару вопросов, чтобы облегчить нам выбор
                 </h4>
 
@@ -21,6 +21,7 @@
                                 v-model="model.presense"
                                 class="form-check-input"
                                 type="radio"
+                                name="presense"
                                 :value="presense"
                                 required
                             />
@@ -37,6 +38,7 @@
                         v-model="model.guests"
                         placeholder="Иван Иванов, Мария Иванова"
                         class="form-control"
+                        required
                     />
                 </div>
 
@@ -53,6 +55,7 @@
                                 class="form-check-input"
                                 type="radio"
                                 :value="presense"
+                                name="second_day_presense"
                                 required
                             />
                             {{ $i18n(presense) }}
@@ -76,7 +79,9 @@
                             type="checkbox"
                             role="switch"
                         />
-                        Нужен трансфер</label
+                        Для вашего комфорта мы организовали трансфер после
+                        праздника обратно до города в 23:30. Нужен ли он
+                        вам?</label
                     >
                 </div>
 
@@ -92,7 +97,7 @@
                     >
                 </div>
 
-                <div class="mb-3">
+                <div class="mb-4">
                     <label class="form-label">Ваша любимая песня</label>
                     <input
                         v-model="model.song"
